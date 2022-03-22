@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+:root {
+    --col-orange: hsl(25, 97%, 53%);
+    --col-white: hsl(0, 0%, 100%);
+    --col-gray: hsl(217, 12%, 63%);
+    --col-gray-dk: hsl(216, 12%, 54%);
+    --col-blue: hsl(213, 19%, 18%);
+    --col-blue-dk: hsl(216, 12%, 8%);
+    --fs-main: 15px;
+    --fw-normal: 400;
+    --fw-bold: 700;
+    --ff-overpass: 'Overpass', sans-serif;
+  }
+
+body {
+    color: var(--col-white);
+    font-family: 'Overpass', sans-serif;
+    font-size: var(--fs-main);
+    margin: 0;
+    padding: 0;
+  }
+  .attribution { 
+    font-size: 16px; text-align: center;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+ }
+.container { 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: var(--col-blue-dk);
+    }
+.card {
+    background-color: hsl(213, 19%, 18%);
+      padding: 2rem;
+      max-width: 300px;
+      border-radius: 1.5rem;
+    }
+.card-2 {
+     display: flex;
+     flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: hsl(213, 19%, 18%);
+      padding: 2rem;
+      max-width: 300px;
+      border-radius: 1.5rem;
+
+    }
+    .card img {
+      border-radius: 50%;
+      background-color: rgba(88, 99, 121, 0.575);
+    padding: 0.9rem;
+    }
+    .ratings-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2em;
+      }
+      
+      .rating-container {
+        padding: 1.8em;
+        background-color: var(--col-blue);
+        display: inline-block;
+        position: relative;
+        border-radius: 50%;
+      }
+      
+      .rating-value {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      input[type="radio"] {
+        display: none;
+      }
+a {
+  text-decoration: none;
+  text-align: center;
+}
+p {
+    text-align: center;
+}
+.btn {
+  display: inline-block;
+  color: white;
+  margin-top: 1rem;
+  background-color: var(--col-orange);
+  padding: 0.5rem 0;
+  border-radius: 12px;
+  width:100%;
+  transition: background-color color 0.5s ease-in-out; 
+}
+.btn:hover {
+    color: var(--col-orange);
+    background-color: white;
+}
+.btn-2 {
+    margin-top: 1rem;
+    color: var(--col-orange);
+    background-color: rgba(88, 99, 121, 0.575);
+     border-radius: 1rem;
+     padding: 0.5rem 1rem;
+}
+.tt {
+    margin-bottom: 0;
+}
+
+
+/* SELECTED */
+input[type="radio"]:checked + label {
+    background-color: var(--col-gray-dk);
+  }
+
+
+  /* //HIDDEN */
+  .hidden {
+    display: none;
+  }

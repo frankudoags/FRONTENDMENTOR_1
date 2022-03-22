@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ratings</title>
+</head>
+<body>
+    <section id="rating-page">
+        <div class="container">
+            <div class="card">
+               <!-- Rating state start -->
+          
+            <img src="/images/icon-star.svg" alt="">
+          
+            <h1>How did we do?</h1> 
+          
+            <p>Please let us know how we did with your support request. All feedback is appreciated 
+              to help us improve our offering!</p> 
+              <div class="ratings-group" id="ratings-group">
+    
+                <input type="radio" class="rating" id="1-star" name="ratings" value="1">
+                <label for="1-star" class="rating-container">
+                  <span class="rating-value">1</span>
+                </label>
+    
+                <input type="radio" class="rating" id="2-star" name="ratings" value="2">
+                <label for="2-star" class="rating-container">
+                  <span class="rating-value">2</span>
+                </label>
+    
+                <input type="radio" class="rating" id="3-star" name="ratings" value="3">
+                <label for="3-star" class="rating-container">
+                  <span class="rating-value">3</span>
+                </label>
+    
+                <input type="radio" class="rating" id="4-star" name="ratings" value="4">
+                <label for="4-star" class="rating-container">
+                  <span class="rating-value">4</span>
+                </label>
+    
+                <input type="radio" class="rating" id="5-star" name="ratings" value="5">
+                <label for="5-star" class="rating-container">
+                  <span class="rating-value">5</span>
+                </label>
+              </div>
+          
+          
+        <p class="btn" id="submitBtn">SUBMIT</p>
+          
+            <!-- Rating state end -->
+            </div>
+          </div>
+    </section>
+       
+      <section id="thankyou" class="hidden">
+        <div class="container">
+            <div class="card-2">
+                <div class="thanks">
+                    <img src="/images/illustration-thank-you.svg" alt="a thank you image">
+                </div>
+                <a href="#" class="btn-2">You selected <span id="user-rating">0</span> out of 5</a>
+                <h1 class="tt">Thank you!</h1>
+                <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to contact us.</p>
+            </div>
+        </div>
+      </section>
+    <script src="app.js"></script>
+</body>
+</html>
